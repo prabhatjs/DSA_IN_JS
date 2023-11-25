@@ -100,7 +100,7 @@ if any one changes in application folder and brach you need to every time to pul
 
 if you need pull the repo from git and its branch by default is 'master branch'  
 git pull <remote name> <branch name> :
-download latest changes from the branch 
+download latest changes from the branch ....
 
 
 
