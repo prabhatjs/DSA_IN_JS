@@ -1,0 +1,17 @@
+set is a collection of unique value ,it is a object which allow you to store the unique data in sets.
+
+const set=new set([1,2,3,4]);
+set.add(5);
+
+What is two pointer approch 
+It's the use of two different pointers (usually to keep track of array or string indices) to solve a problem involving said indices with the benefit of saving time and space. 
+
+two pointer work like this-
+
+1. Running from both ends of an array
+2. Slow & Fast Pointers
+Next type is using two pointers with different speed of movement. Typically they starts from the left end,
+then the first pointer advances fast and give some feedback to the slow pointer and do some calculation.
+3.Running from beginning of 2 arrays / Merging 2 arrays
+In this category, you will be given 2 arrays or lists, then have to process them with individual pointers.
+4.Split & Merge of an array / Divide & Conquer

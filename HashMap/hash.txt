@@ -1,0 +1,14 @@
+hash table are used to store key value pair
+they are like array but the keys are not in order 
+
+basket.graps=100
+graps is key,100 value
+insert o(1)
+lookup o(1)
+delete o(1)
+search o(1)
+
+set to store a key-vale pair
+get to retrieve a value given its key
+remove to delete a key value pair
+Hashing function to convert a string key to a numeric index (md5 example)
