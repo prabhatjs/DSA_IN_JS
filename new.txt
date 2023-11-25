@@ -88,7 +88,7 @@ git diff (hascodecommit1 hascodecommit2 ) two commit..
 git commit -m <"your commit masage"> 
 
 what is git remote 
-git remte help to one repo to other repository connect 
+git remte help to one repo to other repository connect .
 
 add all file 
 
