@@ -90,10 +90,17 @@ git commit -m <"your commit masage">
 what is git remote 
 git remte help to one repo to other repository connect 
 
-   
+add all file 
+
+git add .:this comand all all file in folder in staged area 
 
 
+multiple people work--
+if any one changes in application folder and brach you need to every time to pull the remote repo from git hud because if you do commit no is 8 but on git hud commit no 9 it means anything will change in repo.
 
+if you need pull the repo from git and its branch by default is 'master branch'  
+git pull <remote name> <branch name> :
+download latest changes from the branch 
 
 
 
