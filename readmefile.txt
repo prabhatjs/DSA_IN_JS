@@ -1,5 +1,3 @@
-hello dsa Javascript
-
 1.'git-init' power your folder to be managed by git, and initialises a new empty repository it also create a .git folder that has all relevent logic to manage version of your project.
 
 touch command you to create file for you ..it's linux comand
@@ -68,40 +66,17 @@ how you see your all commit
 'git log' list down all the commit;
 
 if you want to exit out of git log propt press 'q'
-
  
-if i am changes in tracked file but i dont want in file we want file like as its look like its shown first then 
-use this command 
-
-git restore <file> --> it remove all files changes from the staging are to be commited this can be useful if we some direty piese of code and now no more want it. instead of deleting every changes line by line we can restore it or yoou can say restore last clean version of the file.
 
 
-git restore --staged <file> -> it removes file from staging area to the working area.
-this only works if changes are in your staging area..
-
-diff between git rm and git restore
-if you want to move the whole file back to the untracked state then we do rm ,otherwise if we just want to the changes to be moved in working area or staging area we use git restore.
-
-git diff (hascodecommit1 hascodecommit2 ) two commit..
 
 
-git commit -m <"your commit masage"> 
-
-what is git remote 
-git remte help to one repo to other repository connect 
-
-add all file 
-
-git add .:this comand all all file in folder in staged area 
 
 
-multiple people work--
-if any one changes in application folder and brach you need to every time to pull the remote repo from git hud because if you do commit no is 8 but on git hud commit no 9 it means anything will change in repo.
 
-if you need pull the repo from git and its branch by default is 'master branch'
-  
-git pull <remote name> <branch name> :->
-download latest changes from the branch of the mention rempte in yoour local repo
+
+
+
 
 
 
