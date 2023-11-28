@@ -104,6 +104,18 @@ git pull <remote name> <branch name> :->
 download latest changes from the branch of the mention rempte in yoour local repo
 
 
+@@@@@@@@@@@@@#########
+
+Recommended practice to do
+-make changes 
+-git add<file>
+-git commit
+-git pull
+-git push
+
+---------------------------------------------
+
+ 
 
 
 
