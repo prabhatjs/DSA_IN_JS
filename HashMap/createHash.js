@@ -1,21 +1,13 @@
-// let user={
-//     age:54,
-//     name:'Payal',
-//     magic:'true',
-//     laugh:function(){
-//         console.log("hahaha")
-//     }
-
-// }
-
 class HashTable{
-    constructor(size){
-        this.table=new Array(size);
-        this.size=size;
+    setItem(key,vale){
     }
-    hash(key){
-        
+    getItem(key){
+        return " ";
     }
 }
 
-const hashtable=new HashTable(50);
+myTable=new HashTable();
+console.log(myTable);
+myTable.setItem("Firstname","Prabhat");
+myTable.getItem("Firstname");
+console.log(myTable.getItem("Firstname"));

@@ -1,0 +1,38 @@
+a tree is hierachical data structure that consists of node connected by edges
+node store the data,where a tree is non linear data structure
+compared to array, linked lists stacks and queues which are linear data structure
+
+in linear data structure , the time required to search is proportional to size of 
+data set
+
+Tree however owing tp the nonlinear nature allow quicker and easier access to the data
+
+tree uses:
+File System 
+and organization tree 
+DOM
+Chat bots
+
+tree Terminology:
+
+ parent and child node---
+
+ https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fwp-content%2Fuploads%2Ftree3-3.png&tbnid=24j-MmZHxXaHiM&vet=12ahUKEwjrgdXsueeCAxUvbmwGHUepDn4QMygHegQIARBc..i&imgrefurl=https%3A%2F%2Fwww.geeksforgeeks.org%2Fmaximum-parent-children-sum-in-binary-tree%2F&docid=PByv6sYdNFlgsM&w=788&h=588&q=parent%20child%20relationship%20node%20in%20tree&ved=2ahUKEwjrgdXsueeCAxUvbmwGHUepDn4QMygHegQIARBc
+
+ BST(Binary search Tree)
+
+ The value of each left node must be smaller than the parent node
+ the value of each right node must be greater than the parentnode
+
+            {10}
+
+    {5}              {15}
+
+{3}        {7}       
+
+opertaion :
+Insertion To add a nod to the tree
+search:to find the node given its value
+DFS and BFS: To visit all node in the tree
+Deletion : To remove a node given its value
+ 
