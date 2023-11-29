@@ -40,10 +40,11 @@ prepend(data) {
     }
 }
     Removeduplicate(){
+        if(this.isEmpty())return null;
         let current=this.head;
         while(current.next!=null){
             if(current.data==current.next.data){
-                current.next=current.next.next;
+                current.next=current.next.next;//skil list node like this
                 this.size--;
             }else{
                 current=current.next;
