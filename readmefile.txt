@@ -66,14 +66,29 @@ how you see your all commit
 'git log' list down all the commit;
 
 if you want to exit out of git log propt press 'q'
+
  
+if i am changes in tracked file but i dont want in file we want file like as its look like its shown first then 
+use this command 
+
+git restore <file> --> it remove all files changes from the staging are to be commited this can be useful if we some direty piese of code and now no more want it. instead of deleting every changes line by line we can restore it or yoou can say restore last clean version of the file.
 
 
+git restore --staged <file> -> it removes file from staging area to the working area.
+this only works if changes are in your staging area..
+
+diff between git rm and git restore
+if you want to move the whole file back to the untracked state then we do rm ,otherwise if we just want to the changes to be moved in working area or staging area we use git restore.
+
+git diff (hascodecommit1 hascodecommit2 ) two commit..
 
 
+git commit -m <"your commit masage"> 
 
+what is git remote 
+git remte help to one repo to other repository connect 
 
-
+   
 
 
 
