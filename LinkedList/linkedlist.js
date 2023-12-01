@@ -173,7 +173,39 @@ class Node {
       }
       this.head=previous;
     }
-  
+      KthNodeFormLast(index){
+        let counter=0;
+        let temp=this.head;
+        while(this.head!=null){
+          counter=counter+1;
+          this.head=this.head.next;
+        }
+       let m=counter-index+1;//ap formula for 
+      //  let temp=this.head;
+       for(let i=0;i<m-1;i++)
+       {
+        temp=temp.next;
+       }
+       console.log(temp.data);
+      
+        // console.log("length"+counter);
+      }
+      secondLogicForKthNode(index)
+      {
+        let slow = this.head;
+        let fast = this.head;
+        for(let i=1;i<index;i++)
+        {
+          fast=fast.next;
+        }
+        while(fast.next!=null)
+        {
+
+          slow=slow.next;
+          fast=fast.next;
+        }
+        console.log(slow.data);
+      }
     isEmpty() {
       return this.size === 0;
     }
@@ -187,11 +219,11 @@ class Node {
   list.printList();
   list.prepend(10);
   list.prepend(20);
-  console.log("Size of List " + list.getSize());
-  console.log("list is empty " + list.isEmpty());
+  // console.log("Size of List " + list.getSize());
+  // console.log("list is empty " + list.isEmpty());
   list.prepend(50);
-  list.printList();
-  list.findElemntByIndex(3);
+  // list.printList();
+  // list.findElemntByIndex(3);
   list.append(100);
   list.append(100);
   list.append(101);
@@ -199,9 +231,11 @@ class Node {
   list.printList();
 //   list.middleOfList();
 //list.middleUsingSlowFast();
-  list.insertAtIndex(1, 40);
+  // list.insertAtIndex(1, 40);
   //list.removeAtIndex(2);
   //console.log("remove by vaue " + list.RemoveNodeByPassingVale(100));
-  console.log(list.reverseLinkdedList());
+  //console.log(list.reverseLinkdedList());
+  list.KthNodeFormLast(2);
+  console.log(list.secondLogicForKthNode(2));
   list.printList();
   

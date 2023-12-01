@@ -25,6 +25,20 @@ prepend(data) {
     }
     this.size++;
   }
+  append(data) {
+    const node = new Node(data);
+    if (this.isEmpty()) {
+      this.head = node;
+    } else {
+      let previous = this.head;
+      while (previous.next) {
+        previous = previous.next;
+      }
+      previous.next = node;
+    }
+    this.size++;
+  }
+
 
   printList() {
     if (this.isEmpty()) {
@@ -52,6 +66,41 @@ prepend(data) {
         }
         return this.head;
     }
+    secondLogicForKthNode(index)
+    {
+      let slow = this.head;
+      let fast = this.head;
+      for(let i=1;i<index;i++)
+      {
+        fast=fast.next;
+      }
+      while(fast.next!=null)
+      {
+        let current=slow;
+        slow=slow.next;
+        fast=fast.next;
+      }
+      
+      console.log(slow.data);
+    }
+    secondLogicForKthNodeDelte(index)
+    {
+      let slow = this.head;
+      let fast = this.head;
+      for(let i=1;i<=index;i++)
+      {
+        fast=fast.next;
+      }
+      while(fast.next!=null)
+      {
+        slow=slow.next;
+        fast=fast.next;
+      }
+      slow.next=slow.next.next;
+      this.size--;
+      return slow.data;
+      
+    }
 
     isEmpty() {
         return this.size === 0;
@@ -64,15 +113,17 @@ prepend(data) {
 
   const list = new LinkedList();
   list.printList();
-  list.prepend(10);
-  list.prepend(10);
-  list.prepend(10);
-  list.prepend(20);
-  list.prepend(20);
-  list.prepend(30);
-  list.prepend(50);
-  list.prepend(50);
+  list.append(1);
+  list.append(20);
+  list.append(30);
+  list.prepend(40);
+  list.append(50);
+  list.prepend(60);
+  list.append(70);
+  list.append(80);
   list.printList();
-  list.Removeduplicate();
+//   list.Removeduplicate();
+list.secondLogicForKthNode(2);
+console.log(list.secondLogicForKthNodeDelte(2));
   list.printList();
 
