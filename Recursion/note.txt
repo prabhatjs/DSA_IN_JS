@@ -1,0 +1,10 @@
+principle of mathematical induction--
+pmi rule=
+1.small input answer
+2.n=k correct
+3.n=k+1
+
+step1-
+
+
+sum of 1 + n= n(n+1)/2 check this formula for this rule 
