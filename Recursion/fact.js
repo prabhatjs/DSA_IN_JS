@@ -9,4 +9,7 @@ function factorial(n)
     return fun*n;
 }
 
+
+
+
 console.log(factorial(5));
