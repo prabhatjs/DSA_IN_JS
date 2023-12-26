@@ -1,0 +1,18 @@
+FIFO principle 
+ two operation main
+ Enqueue add the data at the last or tail
+ Dequeue remove the data from the front 
+ peek get the value of element at the first position
+ ---------------------------------------
+                        C      B     A
+ ---------------------------------------
+                REAR               FRONT
+        
+FORNT STARTING OF QUEUE
+REAR END OF THE QUEUE
+
+USES--
+
+    printer
+    cpu task scheduling
+    callback queue in javascript runtime
