@@ -1,13 +1,20 @@
 function largest(arr){
     let max=arr[0];
+    let secondmax=-1;
     for(let i=1;i<arr.length;i++){
-        if(arr[i-1]>max)
+        if(arr[i]>max)
             {
+                secondmax=max;
                 max=arr[i]
             }
+            else if(arr[i]<max && arr[i]>secondmax)
+            {
+                secondmax=arr[i];
+                console.log(secondmax);
+            }
     }
-    return max;
+    return secondmax;
 }
 
-let arr=[1,5,3,2,0,10,9,100,80];
+let arr=[9,7,7,7,7];
 console.log(largest(arr));
