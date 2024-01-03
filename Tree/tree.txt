@@ -24,15 +24,36 @@ tree Terminology:
  The value of each left node must be smaller than the parent node
  the value of each right node must be greater than the parentnode
 
-            {10}
+            {10}-----------parent node
 
-    {5}              {15}
+{5}              {15}--------------child node 
 
-{3}        {7}       
+{3}        {7}  ---child     
 
 opertaion :
 Insertion To add a nod to the tree
 search:to find the node given its value
 DFS and BFS: To visit all node in the tree
 Deletion : To remove a node given its value
+
+E,F,C And d Are leaf node
+(B,C,D ) and E ,F are sibling
+A is an ancestor of E
+path (A,E) is A-B-E
+Distance (A,E) is 2
+
+degree total number o child node is- Degree(B) is 2
+degree of tree is 3 lavel of tree
+depth of the node is number of edges form root node
+depth of E is 2
+root node depth is zero
+height of tree is 2 
  
+
+                            (a)--root
+
+
+            (B)             (C)               (D)
+
+
+    (E)             (F)
