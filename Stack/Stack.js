@@ -37,7 +37,9 @@ class StackImpe{
       //and make the next element as the first
       if(current){
         let elm = current.data;
+        console.log(elm)
         current = current.next;
+        console.log(current);
         this.First = current;
         this.size--;
         return elm;
@@ -61,10 +63,10 @@ stackdummy.push(20);
 stackdummy.push(30);
 stackdummy.push(40);
 stackdummy.push(50);
-console.log(stackdummy.pop());
  console.log(stackdummy.pop());
-console.log(stackdummy.pop());
-console.log(stackdummy.pop());
+  console.log(stackdummy.pop());
+// console.log(stackdummy.pop());
+// console.log(stackdummy.pop());
 
 stackdummy.getSize();
 

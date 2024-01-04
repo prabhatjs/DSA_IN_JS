@@ -112,16 +112,16 @@ class Node {
       this.size++;
     }
     removeAtIndex(index) {
-      let removevalue;
+      let removevaluePointer;//this work like a holder it hold the address of 
       let previous = this.head;
       if (index < 0 || index > this.size) return;
   
       for (let i = 0; i < index - 1; i++) {
         previous = previous.next;
       }
-      removevalue = previous.next;
-      previous.next = removevalue.next;
-      console.log("remove Value" + removevalue.data);
+      removevaluePointer = previous.next;
+      previous.next = removevaluePointer.next;
+      console.log("remove Value" + removevaluePointer.data);
     }
     // searchbyValue(data) {
     //   let temp = this.head;
